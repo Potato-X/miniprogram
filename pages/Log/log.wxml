@@ -1,0 +1,8 @@
+<view class="container">
+  <!-- <image class="user-pic" src="{{avatarUrl}}" /> -->
+  <l-avatar l-text-class="user-name" placement="bottom" shape="circle" size="180" open-data="{{['userAvatarUrl','userNickName']}}" />
+  <text class="home-tip">hello,{{month}}<text>月</text></text>
+  <view class="btn">
+    <text bind:tap="routerLinkHandler">开启小程序之旅</text>
+  </view>
+</view>

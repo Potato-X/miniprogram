@@ -1,0 +1,26 @@
+{
+  "pages":[
+    "pages/Log/log",
+    "pages/Home/home",
+    "pages/Movies/movies",
+    "pages/Detail/detail"
+  ],
+  "requiredBackgroundModes": ["audio"],
+  "window": {
+    "navigationBarBackgroundColor": "#ff0000"
+  },
+  "tabBar": {
+    "color":"#000000",
+    "selectedColor":"#07c160",
+    "backgroundColor":"#ffffff",
+    "list": [{
+      "pagePath": "pages/Home/home",
+      "text": "主页"
+    },
+    {
+      "pagePath": "pages/Movies/movies",
+      "text": "电影首页"
+    }
+  ]
+  }
+}

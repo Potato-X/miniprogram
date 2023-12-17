@@ -1,0 +1,30 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.home-tip{
+  margin: 100rpx 0;
+}
+.user-pic{
+  width: 200rpx !important;
+  height: 200rpx !important;
+}
+.btn{
+  border: 1px solid #ffffff;
+  padding: 8px;
+  border-radius: 4px;
+  color: #ffffff;
+}
+.user-name{
+  font-size: 36rpx !important;
+  color: #000000 !important;
+  font-weight: 400 !important;
+}
+page{
+  background-color: #07c160;
+}

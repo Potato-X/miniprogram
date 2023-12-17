@@ -1,0 +1,10 @@
+<view class="post-like">
+  <!-- <image class="post-like-image" src="/images/icon/chat.png"></image> -->
+  <l-icon class="post-like-image" color="#666" size="28" name="favor" />
+  <text class="post-like-font">{{collectcount||0}}</text>
+  <!-- <image class="post-like-image" src="/images/icon/view.png"></image> -->
+  <l-icon class="post-like-image" color="#666" size="32" name="eye" />
+  <text class="post-like-font">{{readcount||0}}</text>
+
+
+</view>

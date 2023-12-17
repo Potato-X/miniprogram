@@ -1,0 +1,26 @@
+<view class="container">
+  <view class="author-block">
+    <image class="avatar" src="{{detail.avatar}}" />
+    <text class="author-name">{{detail.author}}</text>
+    发表于<text class="detail-date">{{detail.date}}</text>
+  </view>
+  <view class="detail-title">{{detail.title}}</view>
+  <view bind:tap="collect" class="collect-box">
+    <!-- 未收藏 -->
+    <image class="collect-img" wx:if="{{!iscollect}}" src="/images/icon/collection-anti.png" />
+    <!-- 已收藏 -->
+    <image class="collect-img" wx:else src="/images/icon/collection.png" />
+  </view>
+  <view class="post-bg">
+    <image class="post-img" src="{{detail.headImgSrc}}" />
+    <view class="btn">
+      <image class="{{['cover-img',playing?'rotate':['rotate', 'paused']]}}" src="{{detail.music.coverImg}}" mode=""/>
+      <button class="action-btn state-paused" data-actiontype="paused" bind:tap="playHandler" wx:if="{{playing}}"></button>
+      <button class="action-btn state-play" data-actiontype="play" bind:tap="playHandler" wx:else></button>
+    </view>
+
+
+  </view>
+
+  <view class="detail-content">{{detail.detail}}</view>
+</view>
